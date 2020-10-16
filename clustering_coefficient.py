@@ -1,5 +1,5 @@
 import random
-from graph import get_graph
+
 
 def uniform_wedge(graph, sample_size):
     total_wedges = 0
@@ -24,10 +24,3 @@ def search(r, acc_wedge_count):
     for k, v in acc_wedge_count.items():
         if r <= v:
             return k
-
-
-if __name__ == "__main__":
-    graph = get_graph("com-youtube.ungraph.txt")
-    cc = uniform_wedge(graph, 50000)
-
-    print(cc)
