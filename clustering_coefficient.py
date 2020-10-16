@@ -1,13 +1,16 @@
 import random
 
 
-def uniform_wedge(graph, sample_size):
+def uniform_wedge(graph, sample_size, sample_percent=None):
     total_wedges = 0
     acc_wedge_count = {}
 
     for node in graph.nodes:
         total_wedges += graph.degree(node) * (graph.degree(node) - 1) / 2
         acc_wedge_count[node] = total_wedges
+
+    if sample_percent:
+        sample_size = int(graph.number_of_nodes() * sample_percent)
 
     sum = 0
     for _ in range(sample_size):
