@@ -12,4 +12,3 @@ def get_graph(file):
             G.add_edge(edge[0], edge[1])
 
     return G
-
