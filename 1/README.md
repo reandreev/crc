@@ -9,4 +9,4 @@
 
 ## Betweenness Centrality
 
-Run 'Run_BC.py' to get BC related info about a graph. Simply add the file to the directory 'graphs' and write the file name in the array of files of 'Run_BC.py'.
+Run `Run_BC.py` to get BC related info about a graph. Simply add the file to the directory `graphs` and write the file name in the array of files of `Run_BC.py`.
